@@ -27,6 +27,7 @@ function getDay() {
 function getEvent(day) {
    var eventHTML;
    switch (day) {
+       //sunday events for he art collection, and the starlight cinema
       case 0: // Sunday Events
       eventHTML = "<dl> \
          <dt>Highlights from the Bridger Art Collection</dt> \
@@ -43,6 +44,7 @@ function getEvent(day) {
          </dd> \
       </dl>";
       break;
+      //monday events for the billboards, and the lecture series
       case 1: // Monday Events
       eventHTML = "<dl> \
          <dt>Monday Billiards</dt> \
@@ -59,6 +61,7 @@ function getEvent(day) {
          </dd> \
       </dl>";
       break;
+      //these are the events for tuesday info session, and the spotlight series!!
       case 2: // Tuesday Events
       eventHTML = "<dl> \
          <dt>Alternative Breaks Spring Break Information Session</dt> \
@@ -78,7 +81,8 @@ function getEvent(day) {
              <p><strong>Cost:</strong> free</p> \
          </dd> \
       </dl>";
-      break;      
+      break;  
+      //the events for wedensday for the volunteer fair, the union music committee, the international cinema    
          case 3: // Wednesday Events
       eventHTML = "<dl> \
          <dt>Volunteer Fair</dt> \
@@ -104,6 +108,7 @@ function getEvent(day) {
          </dd> \
       </dl>";
       break;
+      //The thursday events for the thursday nite open mike and the midnight cinema, the late night yoga
       case 4: // Thursday Events
       eventHTML = "<dl> \
          <dt>Thursday Nite Open Mike</dt> \
@@ -128,7 +133,8 @@ function getEvent(day) {
              <p><strong>Cost:</strong> free to students; $30 for guests (15 week session)</p> \
          </dd> \
       </dl>";
-      break;         
+      break;
+      //Friday events for the conversation camp, the beat, and the movies         
          case 5: // Friday Events
       eventHTML = "<dl> \
          <dt>Conversation &amp; Coffee Hour</dt> \
@@ -154,6 +160,7 @@ function getEvent(day) {
          </dd> \
       </dl>";
       break;
+      //Saturday events for the kites, the bargain billboards, the great music hall.
       case 6: // Saturday Events
       eventHTML = "<dl> \
          <dt>Kites on the Concourse</dt> \
