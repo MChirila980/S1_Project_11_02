@@ -13,9 +13,17 @@
    student union.
 
 */
+getDay();
+setInterval('getDay()', 1000);
+function getDay() {
+   var thisDate = new Date();
+    var dateString = thisDate.toLocaleDateString();
+    var thisDay = thisDate.getDay();
+    var dateHTML = `<h1>Today at the Union</h1> <h2 id="dateString">${dateString}</h2>`;
+    var eventHTML = getEvent(thisDay);
+    document.getElementById('unionToday').innerHTML = dateHTML + eventHTML;
 
-
-
+}
 function getEvent(day) {
    var eventHTML;
    switch (day) {
